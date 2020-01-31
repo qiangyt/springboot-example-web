@@ -3,7 +3,7 @@
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" auto-complete="on" label-position="left">
 
       <div class="title-container">
-        <h3 class="title">Login Form</h3>
+        <h3 class="title">Login</h3>
       </div>
 
       <el-form-item prop="username">
@@ -110,7 +110,7 @@ export default {
         if (valid) {
           this.loading = true
           this.$store.dispatch('user/login', this.loginForm).then(() => {
-            this.$router.push({ path: this.redirect || '/example' })
+            this.$router.push({ path: this.redirect || '/orders' })
             this.loading = false
           }).catch(() => {
             this.loading = false
