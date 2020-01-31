@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: 'Vue Admin Template',
+  title: 'Simple web app for springboot example backend',
 
   /**
    * @type {boolean} true | false
